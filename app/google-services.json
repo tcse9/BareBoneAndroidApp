@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "555358400794",
+    "firebase_url": "https://bareboneandroidapp.firebaseio.com",
+    "project_id": "bareboneandroidapp",
+    "storage_bucket": "bareboneandroidapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555358400794:android:642f359b3762cd59",
+        "android_client_info": {
+          "package_name": "com.barebone.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuWQLNVxo9m9rAg0t5tx2QCS6uZBenzlY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555358400794-pbeg4a0m8oham2ptc2dcfnkkhq88aeeo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

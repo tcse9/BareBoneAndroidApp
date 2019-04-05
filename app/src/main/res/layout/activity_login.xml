@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity">
+
+
+    <data>
+
+        <variable
+            name="uimanager"
+            type="com.barebone.app.binders.UiManager" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_login"
+                android:tint="@color/colorAlphaGray1"
+                android:scaleType="centerCrop"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_36sp"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="@dimen/margin_50dp"
+                android:text="@string/app_name"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:theme="@style/Theme.TextInputLayout">
+
+                    <EditText
+                        android:id="@+id/txtMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:drawableLeft="@drawable/baseline_phone_white_24"
+                        android:drawablePadding="@dimen/margin_10dp"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:hint="@string/txt_hint_phone_number"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.TextInputLayout">
+
+                    <EditText
+                        android:id="@+id/txtNickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:drawableLeft="@drawable/baseline_account_circle_white_24"
+                        android:drawablePadding="@dimen/margin_10dp"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:hint="@string/txt_hint_nickname"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:text="@string/btn_login"
+                    android:textColor="@color/colorWhite"
+                    android:theme="@style/Theme.Button"
+                    android:imeOptions="actionDone"
+                    android:textStyle="bold"/>
+
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</layout>
