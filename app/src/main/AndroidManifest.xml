@@ -35,19 +35,9 @@
             android:name="com.barebone.app.core.BaseActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
 
-        <!--<service android:name="com.barebone.app.firebase.AppInstanceIdService">
-            <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-            </intent-filter>
-        </service>-->
-        <!--<service android:name="com.barebone.app.firebase.AppMessageService">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>-->
 
         <service
-            android:name="com.barebone.app.firebase.AppInstanceIdService"
+            android:name="com.barebone.app.firebase.AppFirebaseMessagingServiceService"
             android:stopWithTask="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
