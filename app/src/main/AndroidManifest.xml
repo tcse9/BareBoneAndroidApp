@@ -37,7 +37,7 @@
 
 
         <service
-            android:name="com.barebone.app.firebase.AppFirebaseMessagingServiceService"
+            android:name="com.barebone.app.firebase.AppFirebaseMessagingService"
             android:stopWithTask="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
